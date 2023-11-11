@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="https://examples.com/somedir/" target="_blank" />
+  </head>
+
+  <body>
+    <label for="test">tested: </label>
+    <br>
+    <label>Do you like cs?
+      <input type="checkbox" >
+    </label>
+    <br>
+    <br>
+    <form action="/formprocess.php" method="post">
+
+      <p>Name:</p>
+      <p><input type="text" name="name" value="你的名字"></p>
+  
+      <p>Email:</p>
+      <p><input name="species" type="text"></p>
+  
+      <p>Comments: </p>
+      <p><textarea name="comments" rows="5" cols="20">你的留言</textarea></p>
+  
+      <p>請問你最有興趣學習的技術:</p>
+      <p><input type="radio" name="interest" value="html"> HTML</p>
+      <p><input type="radio" name="interest" value="css"> CSS</p>
+      <p><input type="radio" name="interest" value="js"> JavaScript</p>
+  
+      <p><input type="submit" value="送出資料"></p>
+  
+    </form>
+    
+    <input type="checkbox">
+    <br>
+    <input type="text">
+    <br>
+    <input type="password">
+    <br>
+    <input type="radio">option one
+    <br>
+    <input type="radio">option two
+    <br>
+    <input type="submit">
+    <br><br>
+
+    <select>
+      <option>Option 1</option>
+      <option>Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+    <select>
+      <option>請選擇你最愛的寵物</option>
+      <option>Dog</option>
+      <option>Cat</option>
+      <option>Hamster</option>
+      <option>Parrot</option>
+      <option>Spider</option>
+      <option>Goldfish</option>
+    </select>
+    <select name="pets" multiple>
+      <option value="">請選擇你最愛的寵物</option>
+      <option value="dog">Dog</option>
+      <option value="cat" selected>Cat</option>
+      <option value="hamster">Hamster</option>
+      <option value="parrot">Parrot</option>
+      <option value="spider" disabled>Spider</option>
+      <option value="goldfish">Goldfish</option>
+    </select>
+    <br> <br><br>
+    <select name="catordog">
+      <optgroup label="Cats">
+        <option>Tiger</option>
+        <option>Leopard</option>
+        <option>Lynx</option>
+      </optgroup>
+      <optgroup label="Dogs">
+        <option>Grey Wolf</option>
+        <option>Red Fox</option>
+        <option>Fennec</option>
+      </optgroup>
+    </select>
+    <br><br><br>
+    點擊<a href="some/place.html">這個&ensp;&ensp;連結</a>會另開新視窗 且連到 https://examples.com/somedir/some/place.html
+    <div style="font-size:20; color:red">ul</div>
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>   
+    <div style="font-size:20; color:red">ol</div>
+
+    <ol>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ol>
+    <div style="font-size:20; color:red">dl</div>
+    <dl>
+        <dt>Denim (semigloss finish)</dt>
+        <dd>Ceiling</dd>
+        <dt>Denim (eggshell finish)</dt>
+        <dt>Evening Sky (eggshell finish)</dt>
+        <dd>Layered on the walls</dd>
+    </dl>
+    <div style="font-size:20; color:red"">nested ol</div>
+    <ol>
+        <li>ordered item 1</li>
+        <li>
+          ordered item 2
+          <ul>
+            <li>unordered item 2-1</li>
+            <li>unordered item 2-2</li>
+          </ul>
+        </li>
+        <li>ordered item 3</li>
+      </ol>
+      
+      <table>
+        <tr>
+          <th>國家</th>
+          <th>首都</th>
+          <th>人口</th>
+          <th>語言</th>
+        </tr>
+        <tr>
+          <td>USA</td>
+          <td>Washington D.C.</td>
+          <td>309 million</td>
+          <td rowspan="2">English</td>
+        </tr>
+        <tr >
+          <td>Sweden</td>
+          <td>Stockholm</td>
+          <td >9 million</td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <th>項目</th>
+          <th>金額</th>
+          <th>總金額</th>
+        </tr>
+        <tr>
+          <td>iPhone 11</td>
+          <td>$24,900</td>
+          <td rowspan="2">$31,390</td>
+        </tr>
+        <tr>
+          <td>AirPods</td>
+          <td>$6,490</td>
+        </tr>
+      </table>
+      <p>
+        <input type="text" name="foo" autofocus>
+      </p>
+  </body>
