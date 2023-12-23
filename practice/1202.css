@@ -1,0 +1,162 @@
+body{ margin: 0; padding: 0px; }
+div {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+div#translate{
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: translate(50px,25px);
+}
+
+div#rotate20{
+    transform: rotate(20deg);
+}
+div#rotate-20{
+    transform: rotate(-20deg);
+}
+div#scale{
+    margin: 150px;
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: scale(2,3);
+}
+div#scalesmaller{
+    margin: 150px;
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: scale(0.5,0.5);
+}
+div#scalex{
+    margin: 150px;
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: scaleX(2);
+}
+div#scaley{
+    margin: 150px;
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: scaleY(2);
+}
+div#skew{
+    transform: skew(20deg, 10deg);
+}
+div#skewx{
+    transform: skewX(-30deg);
+}
+div#skewy{
+    transform: skewY(20deg);
+}
+/*  matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
+div#matrix1{
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+div#matrix2{
+    transform: matrix(1, 0, 0.5, 1, 150, 0);
+}
+div#rotatex{
+    transform: rotateX(150deg)
+}
+div#rotatey{
+    transform: rotateY(150deg)
+}
+div#rotatez{
+    transform: rotateZ(90deg)
+}
+div#hover {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s, height 3s, transform 2s;
+  }
+    
+div#hover:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+}
+div#animate{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+  
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+  
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+div#ani1{
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 5s;
+    animation-fill-mode: forwards;  
+    animation-timing-function: linear;
+}
+div#ani2 {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 5s;
+    animation-fill-mode: forwards;  
+    animation-timing-function: ease;
+}
+/* #div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;} */
+@keyframes mymove{
+    from {left: 0px;}
+    to {left: 300px;}
+}
+
+/* 
+@keyframes
+animation-name
+animation-duration
+animation-delay
+animation-iteration-count
+animation-direction
+animation-timing-function
+animation-fill-mode
+animation
+*/

@@ -1,0 +1,74 @@
+p.blue {
+    color:blue
+}
+p.oval {
+    border-style: solid; 
+    border-radius: 10px;
+    border-color: red;
+}
+p.modpadding{
+    border-style: solid;
+    border-radius: 10px;
+    border-color: red;
+    padding: 20px;
+}
+p.modwidth{
+    border-style: solid;
+    border-radius: 10px;
+    border-color: red;
+    padding: 20px;
+    width: 50%;
+}
+p.modword{
+    border-style: solid;
+    border-radius: 10px;
+    border-color: red;
+    padding: 20px;
+    width: 50%;
+    font-family: "標楷體";
+}
+p.modalign{
+    border-style: solid;
+    border-radius: 10px;
+    border-color: red;
+    padding: 20px;
+    width: 50%;
+    font-family: "標楷體";
+    text-align: center;
+}
+p.modpadding2{
+    border-style: solid;
+    border-radius: 10px;
+    border-color: red;
+    padding: 20px;
+    width: 50%;
+    font-family: "標楷體";
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.blue_box{
+    width: 100px; 
+    height: 100px; 
+    background-color: blue;
+}
+.yellow_circle {
+    width: 100px;
+    height: 100px; 
+    background-color: yellow; 
+    border-radius: 50%; 
+    display: inline-block; 
+    margin-right: 10px; 
+}
+.container {
+    display: flex;
+    background-color: blue;
+}
+
+.box {
+    width: 100px;
+    height: 30px;
+    background-color: yellow; 
+    display: inline-block; 
+    margin: 10px 20px;
+}
